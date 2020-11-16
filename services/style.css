@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Proxima Nova Regular";
+  src: url(fonts/proxima_nova_regular.eot);
+  src: url(fonts/proxima_nova_regular.eot?#iefix) format("embedded-opentype"),
+    url(fonts/proxima_nova_regular.woff2) format("woff2"),
+    url(fonts/proxima_nova_regular.woff) format("woff"),
+    url(fonts/proxima_nova_regular.ttf) format("truetype"),
+    url(fonts/proxima_nova_regular.svg#proxima_nova_regular) format("svg");
+}
+@font-face {
+  font-family: "Proxima Nova Light";
+  src: url(fonts/proxima_nova_light.eot); /* IE 9 Compatibility Mode */
+  src: fonts/proxima_nova_light.eot?#iefix) format('embedded-opentype'), /* IE < 9 */
+		url(fonts/proxima_nova_light.woff2) format('woff2'), /* Super Modern Browsers */
+		url(fonts/proxima_nova_light.woff) format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url(fonts/proxima_nova_light.ttf) format('truetype'), /* Safari, Android, iOS */
+		url(fonts/proxima_nova_light.svg#proxima_nova_light) format('svg'); /* Chrome < 4, Legacy iOS */
+}
+body {
+  text-align: center;
+}
+
+.h2 {
+  font-family: "Proxima Nova Regular";
+  font-size: 20px;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.desc {
+  color: #000000;
+  font-family: "Proxima Nova Light";
+  font-size: 14px;
+}
+.wrap {
+  padding: 3rem 0;
+  display: flex;
+  width: 60%;
+  flex-wrap: wrap;
+  justify-items: center;
+  margin: auto;
+  align-items: center;
+}
+.boxes {
+  width: 25%;
+  margin: auto;
+  text-align: center;
+}
+
+i.fas {
+  color: #ffffff;
+  margin: auto;
+  padding: 20px;
+  width: 40px;
+  height: 40px;
+}
+.boxicon {
+  display: flex;
+  border-radius: 50%;
+  padding: auto;
+  background-color: #2a69a6;
+  width: 80px;
+  margin: auto;
+  height: 80px;
+  border: 0.5px;
+}
+.boxicon:hover {
+  background-color: #ffffff;
+  border: 0.5px solid #2a69a6;
+}
+i.fas:hover {
+  transition: all 0.3s ease;
+  color: #2a69a6;
+}

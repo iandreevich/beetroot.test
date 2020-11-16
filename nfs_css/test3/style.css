@@ -1,0 +1,54 @@
+h1 {
+  text-align: center;
+  color: blueviolet;
+  background-color: black;
+  border: double;
+}
+body {
+  background-image: url(https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-25.jpg);
+}
+.text {
+  text-align: left;
+  color: white;
+  font-size: 18px;
+}
+.image1 img {
+  display: block;
+  margin: auto;
+  width: 25%;
+  height: 25%;
+  border-radius: 150px;
+}
+.image2 {
+  text-align: center;
+  font-size: 50%;
+}
+.i1 {
+  border: dotted;
+  border-color: blueviolet;
+}
+.i2 {
+  border: dotted;
+  border-color: blueviolet;
+}
+.i3 {
+  border: dotted;
+  border-color: blueviolet;
+}
+.i4 {
+  border: dotted;
+  border-color: blueviolet;
+}
+.i5 {
+  border: dotted;
+  border-color: blueviolet;
+}
+.text3 {
+  background-color: black;
+
+  color: blueviolet;
+  text-align: center;
+  border: double;
+  border-radius: 50px;
+  font-size: 20px;
+}
