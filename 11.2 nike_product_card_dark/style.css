@@ -1,0 +1,98 @@
+@font-face {
+  font-family: Museo Sans Rounded100;
+  src: url(font/MuseoSansRounded-100.ttf);
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: url(img/main\ bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  margin: 10% auto;
+  height: 600px;
+  width: 800px;
+  font-family: Museo Sans Rounded100;
+}
+.logo {
+  margin: 30%;
+  position: relative;
+}
+.container {
+  height: 800px;
+  width: 600px;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  background-color: #111a28;
+  width: 690px;
+  height: 390px;
+  border-radius: 15px;
+  margin: o auto;
+}
+.card__image {
+  margin: 1%;
+  width: 400px;
+  height: 300px;
+  position: relative;
+  top: 30%;
+  right: 3%;
+}
+.card__bullets {
+  position: relative;
+  margin: auto 40%;
+  top: 20%;
+}
+.card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 280px;
+  width: 185px;
+  color: #797d84;
+  margin: 0 auto;
+  margin-right: 5%;
+  margin-top: 8%;
+}
+.info__h2 {
+  color: #cccccc;
+  font-size: 24px;
+  margin: 0 auto;
+}
+.info__text {
+  font-size: 14px;
+  color: #797d84;
+}
+
+.card__rating span {
+  padding: 0;
+  font-size: 15px;
+  color: lightgrey;
+}
+.card__rating > span:before {
+  content: "★";
+}
+.card__rating > span.rating__active {
+  color: #ffcc00;
+}
+.select__size,
+.select__qty {
+  background: transparent;
+  height: 30px;
+  padding: 6px;
+  font-size: 14px;
+  width: 70px;
+  color: #797d84;
+}
+.card__cart {
+  height: 40px;
+  width: 180px;
+  background: #202835;
+  color: #797d84;
+  border: 1px solid;
+  position: relative;
+}

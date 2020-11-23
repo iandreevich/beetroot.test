@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "ralewaybold";
+  src: url(font/raleway.bold.ttf);
+}
+@font-face {
+  font-family: "ralewaylight";
+  src: url(font/raleway.light.ttf);
+}
+body {
+  background-color: #9966ff;
+}
+.header {
+  text-align: center;
+  font-size: 17px;
+  color: #ffffff;
+  font-family: "ralewaylight";
+}
+.header h2 {
+  font-size: 90px;
+  font-family: "ralewaybold";
+}
+.maint {
+  margin: 0 auto;
+  margin-left: 36%;
+  margin-right: 36%;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 1200px;
+  box-sizing: border-box;
+  margin: 3% auto;
+  font-family: "ralewaybold";
+}
+.boxes {
+  width: 370px;
+  height: 310px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.box1 {
+  background-image: url(img/1.jpg);
+}
+.box2 {
+  background-image: url(img/2.jpg);
+}
+.box3 {
+  background-image: url(img/3.jpg);
+}
+.date {
+  margin: 10%;
+  background-image: url(img/bg.png);
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 5%;
+}
+
+.boxtext {
+  margin: 30% 11% 0% 7%;
+  font-size: 20px;
+}
+.author {
+  margin-left: 7%;
+  opacity: 0.5;
+  font-size: 12px;
+}
+.buttons {
+  text-align: center;
+}
+button {
+  background-color: #ff000f;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "lato Bold";
+  src: url(font/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: "Lato Light";
+  src: url(font/Lato-Light.ttf);
+}
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 30px;
+}
+.line {
+  margin: auto 48%;
+}
+.hfirst {
+  text-transform: uppercase;
+  font-size: 34px;
+  font-family: "Lato Bold";
+  word-spacing: 5px;
+}
+.hsecond {
+  margin: 3% 35% 3% 35%;
+  font-size: 16px;
+  font-family: "Lato Light";
+}
+
+.flip-cards {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  flex-wrap: wrap;
+}
+.text {
+  text-align: left;
+}
+.first {
+  font-size: 20px;
+  margin: 0 auto;
+  margin-top: 5%;
+  font-family: "Lato Bold";
+}
+.second {
+  margin: 1% auto;
+  font-family: "Lato Light";
+  font-size: 16px;
+}
+
+.flip-card-inner1,
+.flip-card-inner2,
+.flip-card-inner3,
+.flip-card-inner4 {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card1:hover .flip-card-inner1,
+.flip-card2:hover .flip-card-inner2,
+.flip-card3:hover .flip-card-inner3,
+.flip-card4:hover .flip-card-inner4 {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front1,
+.flip-card-back1 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  backface-visibility: hidden;
+}
+.flip-card-front2,
+.flip-card-back2 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  backface-visibility: hidden;
+}
+.flip-card-front3,
+.flip-card-back3 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  backface-visibility: hidden;
+}
+.flip-card-front4,
+.flip-card-back4 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  backface-visibility: hidden;
+}
+.flip-card-back1,
+.flip-card-back2,
+.flip-card-back3,
+.flip-card-back4 {
+  background-color: #3399cc;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+}
+.back-image1,
+.back-image2,
+.back-image3 {
+  margin-top: 80%;
+}
+.card {
+  margin: 1%;
+}
