@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container__header">
+        <h2 class="header__first">Contact</h2>
+        <p class="header__second">
+          For new projects, ideas, business or anything you'd like to discuss,
+          contact with me!
+        </p>
+      </div>
+      <form>
+        <div class="container__main">
+          <div class="main__input">
+            <input
+              class="input__login feedback-input"
+              type="name"
+              id="name"
+              placeholder="Your Name..."
+              data-mask
+            />
+            <input
+              class="input__email feedback-input"
+              type="email"
+              id="email"
+              placeholder="Your email..."
+            />
+            <input
+              class="input__number feedback-input"
+              type="tel"
+              id="number"
+              placeholder="Your phone number..."
+              data-mask="+ 380 (00) 000 0000"
+            />
+            <textarea
+              name="text"
+              class="text-area feedback-input"
+              placeholder="Comment"
+            ></textarea>
+            <input type="submit" class="submit" id="submit" value="Send" />
+          </div>
+        </form>
+          <div class="main__info">
+            <div class="info__address text">
+              <h2 class="info-first">Address</h2>
+              <p class="info-second">123 City name, Street, City, Country</p>
+            </div>
+            <div class="info__email text">
+              <h2 class="info-first">Email</h2>
+              <p class="info-second">cahee@domain.com</p>
+            </div>
+            <div class="info__phone text">
+              <h2 class="info-first">Phone</h2>
+              <p class="info-second">+012 345 6789</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container__footer">
+          <div class="footer__info">
+            <p class="footer__p">2015 Company. All right reserved</p>
+            <img class="footer__img" src="img/logo.png" />
+            <p class="footer__p">
+              Made with <span class="love">love</span> by Auskteez
+            </p>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./plugins/jquery.mask.min.js"></script>
+  </body>
+</html>

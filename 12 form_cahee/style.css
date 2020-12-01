@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "Raleway Bold";
+  src: url(font/raleway.bold.ttf);
+}
+@font-face {
+  font-family: "Raleway Light";
+  src: url(font/raleway.light.ttf);
+}
+
+body {
+  background: url(img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container__header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+.header__first {
+  font-size: 90px;
+  margin: 15px auto;
+  font-family: "Raleway Bold";
+}
+.header__second {
+  font-size: 17px;
+  margin: auto 41%;
+  font-family: "Raleway Light";
+}
+.container__main {
+  width: 1000px;
+  height: 500px;
+  display: flex;
+  margin: 0 auto;
+  font-family: "Raleway Light";
+  min-height: 64vh;
+}
+
+.main__input {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 450px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.main__info {
+  margin: -20px auto;
+  margin-left: 18%;
+}
+.text {
+  margin: 20px auto;
+}
+.info-first {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: "Raleway Bold";
+  margin: 0;
+}
+.info-second {
+  font-size: 20px;
+  font-family: "Raleway Light";
+  margin: 0;
+}
+
+#submit {
+  text-align: center;
+  color: #ffffff;
+  height: 50px;
+  background: #00c4c4;
+  border: 3px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#submit:hover {
+  background-color: #ffffff;
+  color: #00c4c4;
+  border: 3px solid #00c4c4;
+}
+
+.feedback-input {
+  color: #3c3c3c;
+  font-family: "Raleway Light";
+  background-color: #00c4c4;
+  font-size: 15px;
+  line-height: 22px;
+  padding: 13px 13px 13px 40px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 3px solid rgba(0, 0, 0, 0);
+  color: #ffffff;
+}
+.feedback-input::placeholder {
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.text-area {
+  height: 250px;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.footer__info {
+  background: #262626;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+.footer__p {
+  margin: 1%;
+  font-size: 15px;
+  color: #ffffff;
+  margin: auto 17%;
+}
+
+.love {
+  color: #ff3366;
+}
