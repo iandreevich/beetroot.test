@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@font-face {
+  font-family: "BebasNeue Bold";
+  src: url("/dist/fonts/BebasNeue Bold.otf");
+}
+@font-face {
+  font-family: "BebasNeue Book";
+  src: url("/dist/fonts/BebasNeue Book.otf");
+}
+@font-face {
+  font-family: "BebasNeue Regular";
+  src: url("/dist/fonts/BebasNeue Regular.otf");
+}
+@font-face {
+  font-family: "BebasNeue Light";
+  src: url("/dist/fonts/BebasNeue Light.otf");
+}
+@font-face {
+  font-family: "BebasNeue Thin";
+  src: url("/dist/fonts/BebasNeue Thin.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #9789f9;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1100px;
+  margin: 100px auto;
+}
+
+.tarif {
+  box-sizing: border-box;
+  width: 33%;
+  margin: 20px;
+  background-color: #f5f4f9;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.tarif__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  background-color: white;
+  height: 60%;
+  border-radius: 50% 50% 0 0/40% 40% 0 0;
+}
+.tarif__pop {
+  width: 37%;
+  height: 690px;
+  margin: -15px 0;
+}
+.tarif__price {
+  font-size: 60px;
+  padding-top: 40px;
+  font-family: "BebasNeue Thin", Arial, Helvetica, sans-serif;
+}
+.tarif__price:after {
+  content: "/HR";
+  font-size: 16px;
+}
+.tarif__price:before {
+  content: "$";
+  font-size: 24px;
+  vertical-align: super;
+}
+.tarif__benefit {
+  line-height: 45px;
+  list-style: none;
+  text-align: left;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+.tarif__name {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 2% auto;
+  font-family: "BebasNeue Regular", Arial, Helvetica, sans-serif;
+}
+.tarif__icon {
+  padding: 25px;
+  size: 150%;
+}
+.tarif__button {
+  background-color: #66ccff;
+  border-radius: 28px;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 18px;
+  padding: 15px 45px;
+  text-decoration: none;
+  position: relative;
+  top: 35px;
+  font-family: "BebasNeue Bold", Arial, Helvetica, sans-serif;
+}
+.tarif__button:hover {
+  background-color: #fd8d7b;
+}
+.tarif .button__color {
+  background-color: #fd8d7b;
+  top: -10px;
+}
+.tarif .button__color:hover {
+  background-color: #66ccff;
+}
+
+.footer__text {
+  font-size: 11px;
+  margin-top: 5%;
+  font-family: "BebasNeue Light", Arial, Helvetica, sans-serif;
+  color: #cccccc;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .tarif {
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 850px;
+    width: 100%;
+    padding: 0;
+    font-size: 25px;
+  }
+  .tarif__price {
+    font-size: 100px;
+  }
+  .tarif__name {
+    font-size: 35px;
+  }
+  .tarif__button {
+    padding: 30px 70px;
+    top: 40px;
+  }
+  .tarif__button:hover {
+    background-color: #66ccff;
+  }
+}
+/*# sourceMappingURL=style.css.map */
