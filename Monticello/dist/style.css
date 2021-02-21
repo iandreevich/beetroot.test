@@ -54,7 +54,7 @@ html {
   color: #ffffff;
 }
 .navigation__item a:hover {
-  color: red;
+  opacity: 0.8;
 }
 .navigation__socials {
   display: flex;
@@ -71,6 +71,9 @@ html {
 .navigation__socials a {
   text-decoration: none;
   color: #ffffff;
+}
+.navigation__socials a:hover {
+  opacity: 0.7;
 }
 
 .slider__slide {
@@ -130,11 +133,11 @@ html {
 }
 
 .header__scroll-down {
+  display: flex;
   position: absolute;
   margin: auto;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  bottom: 5%;
+  left: 50%;
 }
 
 .project {
@@ -224,6 +227,9 @@ html {
   background: none;
   border: 1px solid #000;
 }
+.project__button:hover {
+  opacity: 0.7;
+}
 .project___image {
   width: 40%;
 }
@@ -237,6 +243,7 @@ html {
 }
 
 .news {
+  height: 1000px;
   background: url(/dist/img/Bg_news.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -257,7 +264,18 @@ html {
   color: #ffffff;
   font-size: 44px;
   text-align: center;
-  padding: 4rem;
+  padding: 8rem;
+  position: relative;
+}
+.news__headline::after {
+  content: " ";
+  width: 8rem;
+  border-top: 3px solid #fff;
+  position: absolute;
+  bottom: 13rem;
+  right: 0;
+  left: 0;
+  margin: auto;
 }
 .news__slider {
   display: flex;
@@ -268,11 +286,16 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  opacity: 0.9;
+}
+.news__slide:hover {
+  opacity: 1;
 }
 .news__img {
   margin: -5px;
 }
 .news__description {
+  color: #2c4058;
   display: flex;
   background-color: #ffffff;
   flex-direction: column;
@@ -285,7 +308,7 @@ html {
   width: 85%;
   padding: 1rem;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   font-size: 18px;
   font-family: Gotham Book;
 }
@@ -295,8 +318,12 @@ html {
 .news__title {
   font-size: 22px;
 }
-.news__author {
-  width: 60%;
+.news__post {
+  margin-left: 1rem;
+}
+.news__date {
+  color: #66a3fe;
+  font-size: 14px;
 }
 
 .slick-list {
@@ -309,16 +336,29 @@ html {
 
 .gallery {
   max-width: 80%;
-  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px auto;
+  color: #2c4058;
 }
 .gallery__headline {
-  margin-top: 60px;
-  margin: auto;
-  padding: 20px;
-  border-top: 2px solid #080868;
-  max-width: 170px;
+  font-family: Gotham Bold;
+  margin: 5%;
+  font-size: 44px;
   text-align: center;
-  color: #080868;
+  text-transform: uppercase;
+  position: relative;
+}
+.gallery__headline::after {
+  content: " ";
+  width: 8rem;
+  border-top: 3px solid #2c4058;
+  position: absolute;
+  bottom: 6rem;
+  right: 0;
+  left: 0;
+  margin: auto;
 }
 .gallery__main {
   display: flex;
@@ -343,37 +383,182 @@ html {
 .gallery__items img:nth-last-child(1) {
   padding-bottom: 0;
 }
+.gallery__button {
+  margin: 3%;
+  padding: 1rem 4rem;
+  text-transform: uppercase;
+  background: none;
+  border: 1px solid #000;
+}
+.gallery__button:hover {
+  opacity: 0.7;
+}
 
 .map {
   display: block;
+  position: relative;
+  z-index: -1;
 }
 
 .map__inner {
   width: 100%;
   height: 700px;
   background-color: #000;
-  position: relative;
 }
 
 .contact {
-  width: 40%;
-  margin: auto;
+  position: absolute;
+  left: 35%;
+  top: 70%;
+  width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
   background-color: #ffffff;
-  border: 1px solid;
+  box-shadow: 0px 0px 47px 0px #cfcfcf;
+  text-align: center;
+  z-index: 99;
+  background: url(img/form_bg.jpg);
+  background-position: bottom;
+  background-size: cover;
 }
 .contact__headline {
-  text-align: center;
-  font-size: 44px;
+  margin-bottom: 2rem;
 }
-.contact__items {
-  list-style: none;
-}
-.contact__box {
+.contact__form {
   display: flex;
-  align-items: center;
-  text-align: center;
   justify-content: center;
 }
-.contact_blank {
+.contact__items {
+  padding-right: 1rem;
+  width: 50%;
+}
+.contact__item {
   display: flex;
+  padding: 1rem;
+  font-size: 17px;
+}
+.contact__inputs {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact__button {
+  padding: 1rem;
+  width: 150px;
+  text-transform: uppercase;
+  background: none;
+  border: 1px solid #000;
+  margin-left: auto;
+}
+.contact i {
+  color: darkorchid;
+  margin-right: 0.5rem;
+}
+
+.form__group {
+  position: relative;
+  width: 100%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 10px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 1px;
+  border-image: linear-gradient(to right, darkorchid);
+  border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: darkorchid;
+  font-weight: 700;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+
+.footer {
+  background: url(/dist/img/footer.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -2;
+  position: relative;
+  height: 500px;
+}
+.footer__wrapper {
+  width: 30%;
+  margin: auto;
+  padding: 15rem;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: -9;
+}
+.footer__copyright {
+  margin: auto;
+  margin-top: 2rem;
+  display: flex;
+}
+.footer__copy {
+  margin-right: 2rem;
+}
+.footer__socials {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__social {
+  margin-left: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  width: 1rem;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+.footer__socials a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer__socials a:hover {
+  opacity: 0.7;
 }
