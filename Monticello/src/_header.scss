@@ -4,6 +4,8 @@
   position: relative;
 }
 .navigation {
+  text-decoration: none;
+  color: #ffffff;
   max-width: 1200px;
   width: 80%;
   position: absolute;
@@ -24,6 +26,13 @@
     width: 50%;
     justify-content: space-between;
   }
+  &__item a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  &__item a:hover {
+    color: red;
+  }
 
   &__socials {
     display: flex;
@@ -37,6 +46,10 @@
     width: 1rem;
     border: 1px solid #ffffff;
     border-radius: 50%;
+  }
+  &__socials a {
+    text-decoration: none;
+    color: #ffffff;
   }
 }
 .slider {

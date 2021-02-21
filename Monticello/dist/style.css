@@ -15,6 +15,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   color: #ffffff;
   margin: 0 auto;
@@ -22,6 +26,8 @@
 }
 
 .navigation {
+  text-decoration: none;
+  color: #ffffff;
   max-width: 1200px;
   width: 80%;
   position: absolute;
@@ -43,6 +49,13 @@
   width: 50%;
   justify-content: space-between;
 }
+.navigation__item a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.navigation__item a:hover {
+  color: red;
+}
 .navigation__socials {
   display: flex;
   justify-content: space-between;
@@ -54,6 +67,10 @@
   width: 1rem;
   border: 1px solid #ffffff;
   border-radius: 50%;
+}
+.navigation__socials a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .slider__slide {
