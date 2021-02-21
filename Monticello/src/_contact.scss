@@ -1,0 +1,22 @@
+.contact {
+  width: 40%;
+  margin: auto;
+  background-color: #ffffff;
+  border: 1px solid;
+  &__headline {
+    text-align: center;
+    font-size: 44px;
+  }
+  &__items {
+    list-style: none;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  &_blank {
+    display: flex;
+  }
+}
