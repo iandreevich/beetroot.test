@@ -1,0 +1,73 @@
+.project {
+  color: $fontColor;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+
+  &__headline {
+    font-family: Gotham Bold;
+    text-align: center;
+    font-size: 44px;
+    text-transform: uppercase;
+    position: relative;
+    letter-spacing: 1%;
+  }
+  &__headline::after {
+    content: " ";
+    width: 8rem;
+    border-top: 3px solid #2c4058;
+    position: absolute;
+    bottom: 5rem;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+  &__item {
+    display: flex;
+
+    justify-content: space-between;
+  }
+  .second {
+    flex-direction: row-reverse;
+  }
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+  }
+  &__subtitle {
+    font-family: Gotham Book;
+    font-size: 22px;
+    text-transform: uppercase;
+  }
+  &__title {
+    font-family: Gotham Bold;
+    font-size: 44px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  &__info,
+  &__geolocation {
+    font-family: Gotham Book;
+    font-size: 18px;
+    margin: 2.5rem 0rem;
+  }
+
+  &__button {
+    padding: 1rem;
+    width: 150px;
+    text-transform: uppercase;
+    background: none;
+    border: 1px solid #000;
+  }
+  &___image {
+    width: 40%;
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+}
