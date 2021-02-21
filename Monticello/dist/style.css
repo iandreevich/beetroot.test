@@ -124,7 +124,6 @@
   color: #2c4058;
   display: flex;
   flex-direction: column;
-  width: 80%;
   margin: auto;
 }
 .project__headline {
@@ -133,7 +132,7 @@
   font-size: 44px;
   text-transform: uppercase;
   position: relative;
-  letter-spacing: 1%;
+  margin: 7rem;
 }
 .project__headline::after {
   content: " ";
@@ -148,15 +147,42 @@
 .project__item {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 100px;
+}
+.project .first {
+  max-width: 88%;
+  margin-right: auto;
+}
+@media screen and (max-width: 1700px) {
+  .project .first {
+    max-width: 85%;
+  }
 }
 .project .second {
   flex-direction: row-reverse;
+  max-width: 88%;
+  margin-left: auto;
+}
+@media screen and (max-width: 1700px) {
+  .project .second {
+    max-width: 85%;
+  }
 }
 .project__description {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 40%;
+  width: 500px;
+  margin-left: 70px;
+  margin-right: auto;
+}
+.project__description__second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  margin-right: 190px;
+  margin-left: auto;
 }
 .project__subtitle {
   font-family: Gotham Book;
@@ -185,6 +211,68 @@
   width: 40%;
 }
 .project__img {
-  width: 100%;
-  height: auto;
+  width: auto;
+}
+@media screen and (max-width: 1400px) {
+  .project__img {
+    width: 100%;
+  }
+}
+
+.news {
+  background: url(/dist/img/Bg_news.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.news__headline {
+  text-align: center;
+  margin-top: 5rem;
+}
+.news__slider {
+  display: flex;
+  align-items: center;
+}
+.news__slide {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.news__img {
+  margin: -5px;
+}
+.news__description {
+  display: flex;
+  background-color: #ffffff;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 370px;
+  height: 275px;
+}
+.news__title, .news__info, .news__author {
+  text-transform: uppercase;
+  width: 85%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-family: Gotham Book;
+}
+.news__info {
+  text-transform: none;
+}
+.news__title {
+  font-size: 22px;
+}
+.news__author {
+  width: 60%;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
 }

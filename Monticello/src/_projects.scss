@@ -2,7 +2,6 @@
   color: $fontColor;
   display: flex;
   flex-direction: column;
-  width: 80%;
   margin: auto;
 
   &__headline {
@@ -11,7 +10,7 @@
     font-size: 44px;
     text-transform: uppercase;
     position: relative;
-    letter-spacing: 1%;
+    margin: 7rem;
   }
   &__headline::after {
     content: " ";
@@ -25,17 +24,42 @@
   }
   &__item {
     display: flex;
-
     justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  .first {
+    max-width: 88%;
+    margin-right: auto;
+
+    @media screen and (max-width: 1700px) {
+      max-width: 85%;
+    }
   }
   .second {
     flex-direction: row-reverse;
+    max-width: 88%;
+    margin-left: auto;
+
+    @media screen and (max-width: 1700px) {
+      max-width: 85%;
+    }
   }
   &__description {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 40%;
+    width: 500px;
+    margin-left: 70px;
+    margin-right: auto;
+
+    &__second {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 500px;
+      margin-right: 190px;
+      margin-left: auto;
+    }
   }
   &__subtitle {
     font-family: Gotham Book;
@@ -67,7 +91,9 @@
     width: 40%;
   }
   &__img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    @media screen and (max-width: 1400px) {
+      width: 100%;
+    }
   }
 }
